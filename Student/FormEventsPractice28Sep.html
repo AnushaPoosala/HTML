@@ -1,0 +1,31 @@
+<head>
+    <title>FormEventsPractice28Sep</title>
+</head>
+
+<body>
+    <form>
+        <label>FirstName  :<input type="text" id="firstname" required></label><br><br>
+        <label>LastName  :<input type="text" id="lastname" required></label><br><br>
+        <label>Password  :<input type="password" required id="password"  onfocus="UserIsOnFocusOnPassword(this)"></label><br><br>
+        <p id="rulesDisplay"></p>
+        
+        <label>ChooseAnySubscription</label>
+        <select id="membershiptype">
+            <option>Select the Membership Type</option>
+            <option>Platinum</option>
+            <option>Gold</option>
+            <option>Silver</option>
+        </select><br><br>
+        
+        <button type="button" onclick="DisplayInput(this)">Submit to Get Membership</button></br>
+    </form>
+
+    <!-- to display Output -->
+    <h4>Please check before submitting your details</h1></br>
+    <p id="outputfirstname"></p>
+    <p id="outputlastname"></p>
+    <p id="outputpassword"></p>
+    <p id="membershiptype"></p>
+    
+    <script src="FormEventsPractice28Sep.js"> </script>
+</body>
