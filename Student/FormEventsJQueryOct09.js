@@ -53,16 +53,16 @@ jQuery(function () {
     });
 
     $("#formid").on("submit",function(event){
-        let usernameval=$("usernameid").val();
-        let reasonval=$("reasonid").val;
-        let roleval=$("roleid").val;
+        let usernameval=$("#usernameid").val();
+        let reasonval=$("#reasonid").val();
+        let roleval=$("#roleid").val();
 
-        let formval=`<label> Username: ${usernameval}</label><br>
-        <label> Reason for Login: ${reasonval}</label><br>
-        <label> RoleId: ${roleval}</label><br>
+        let formval=`<label><b> Username: </b>${usernameval}</label><br>
+        <label><b> Reason for Login: </b>${reasonval}</label><br>
+        <label><b> RoleId: </b>${roleval}</label><br>
         `;
 
-        $("formid").html(formval);
+        $("#formid").html(formval);
 
         //from stopping form from submission
         event.preventDefault();
